@@ -1,6 +1,6 @@
 {
   "name": "cocoon-compose",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compose async, and sync functions",
   "main": "index.js",
   "directories": {
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/hollowdoor/cocoon_compose/issues"
   },
-  "homepage": "https://github.com/hollowdoor/cocoon_compose#readme"
+  "homepage": "https://github.com/hollowdoor/cocoon_compose#readme",
+  "dependencies": {
+    "es6-promise": "^3.1.2"
+  }
 }

@@ -1,6 +1,8 @@
 "use strict";
 module.exports = cocoon_compose;
 
+var Promise = require('es6-promise').Promise;
+
 /*
 git remote add origin https://github.com/hollowdoor/cocoon_compose.git
 git push -u origin master
