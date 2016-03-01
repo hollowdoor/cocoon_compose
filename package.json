@@ -1,0 +1,26 @@
+{
+  "name": "cocoon-compose",
+  "version": "1.0.0",
+  "description": "Compose async, and sync functions",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "functional",
+    "compose"
+  ],
+  "author": "Quentin Engles <hollowdoor99@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollowdoor/cocoon_compose.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hollowdoor/cocoon_compose/issues"
+  },
+  "homepage": "https://github.com/hollowdoor/cocoon_compose#readme"
+}
