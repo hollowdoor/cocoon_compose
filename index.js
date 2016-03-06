@@ -13,8 +13,11 @@ var slice = Array.prototype.slice;
 function cocoon_compose(){
     var ops = slice.call(arguments);
 
-    return function(result){
-        return proc(ops, result, ops.length, this);
+    return function(){
+        var result = ops[ops.length - 1].apply(this, arguments);
+        return ops.length - 1 === -1
+            ? Promise.resolve(result)
+            : proc(ops, result, ops.length - 1, this);
     };
 }
 
@@ -23,7 +26,7 @@ function proc(ops, result, index, context){
     if(typeof result.then === 'function'){
 
         return result.then(function(res){
-            proc(ops, res, index, context);
+            return proc(ops, res, index, context);
         });
 
     }
